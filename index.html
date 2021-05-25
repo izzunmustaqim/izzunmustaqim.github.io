@@ -9,6 +9,9 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -38,7 +41,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body id="page-top" onload="calculateExp()">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
@@ -92,17 +95,19 @@
         <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
           <div data-aos="zoom-out">
             <!-- <h1>Build Your Resume With <span>Bootstlander</span></h1> -->
-            <h2>I am talented designers making websites with Bootstrap.</h2>
             <h2>Experienced Software Engineer with a demonstrated history of working in the computer software industry.
-              Skilled in PHP, C++, Android, Yii, and Java. Strong engineering professional with a Bachelor of Computer
+              Skilled in PHP, Yii 2.0, Laravel, C++, Android, and Java. Strong engineering professional with a Bachelor
+              of Computer
               Science focused in Netcentric Computing from Universiti Teknologi MARA.</h2>
             <div class="text-center text-lg-start">
               <a href="#experience" class="btn-get-started scrollto">Get Started</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-          <img src="assets/img/izzun.png" class="img-fluid animated" alt="">
+        <div class="col-lg-3 col-md-6">
+          <div data-aos="zoom-out" data-aos-delay="300">
+            <div><img src="assets/img/izzun.png" class="img-fluid" alt=""></div>
+          </div>
         </div>
       </div>
     </div>
@@ -133,22 +138,22 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Experience</h2>
-          <p>Working Experience</p>
+          <p id="exp">Working Experience</p>
         </div>
 
         <div class="row no-gutters" data-aos="fade-left">
           <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1">
               <h3 class="mb-0">Software Engineer / EDI Developer</h3>
-              <h4 class="title"><a href="https://www.b2be.com/">B2BE</a></h4>
-              <p>• Working mainly on C++ language for TDN (Transaction Delivery Network)</p>
-              <p>• Work within the team and help ensure the successful delivery of the various products and
+              <h4 class="title"><a href="https://www.b2be.com/">B2BE GSS Sdn Bhd</a></h4>
+              <p class="bi bi-dash-circle-dotted"> Working mainly on C++ language for TDN (Transaction Delivery Network)</p>
+              <p class="bi bi-dash-circle-dotted"> Work within the team and help ensure the successful delivery of the various products and
                 solutions within estimated time frames</p>
-              <p>• To ensure on-going development practices for consistency, reliability, performance and
+              <p class="bi bi-dash-circle-dotted"> To ensure on-going development practices for consistency, reliability, performance and
                 continuity</p>
-              <p>• To take the technical lead role on specific projects liaising with internal and external
+              <p class="bi bi-dash-circle-dotted"> To take the technical lead role on specific projects liaising with internal and external
                 customers to advise and have input into the successful delivery of the solution</p>
-              <p>• Provide support and guidance to the business when technical expertise is required.</p>
+              <p class="bi bi-dash-circle-dotted"> Provide support and guidance to the business when technical expertise is required.</p>
             </div>
             <div class="flex-shrink-0"><span class="text-primary">April 2018 - Present</span></div>
           </div>
@@ -156,10 +161,10 @@
             <div class="flex-grow-1">
               <h3 class="mb-0">Software Engineer</h3>
               <h4 class="title"><a href="https://myopensoft.net/v2/">Opensoft Technologies Sdn Bhd</a></h4>
-              <p>• Implemented PHP Yii2 on project E-permit for Jabatan Perkhidmatan Veterinar (JPV).</p>
-              <p>• Provided ongoing support for client system including ongoing programming support for
+              <p class="bi bi-dash-circle-dotted"> Implemented PHP Yii2 on project E-permit for Jabatan Perkhidmatan Veterinar (JPV).</p>
+              <p class="bi bi-dash-circle-dotted"> Provided ongoing support for client system including ongoing programming support for
                 enhancing systems.</p>
-              <p>• Develop project concepts and maintain optimal workflow.</p>
+              <p class="bi bi-dash-circle-dotted"> Develop project concepts and maintain optimal workflow.</p>
               <p>• Complete detailed programming and development tasks for frontend and backend system.</p>
               <p>• Use Git during development phase.</p>
             </div>
@@ -168,7 +173,7 @@
           <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1">
               <h3 class="mb-0">SKIM LATIHAN 1 MALAYSIA (SL1M)</h3>
-              <h4 class="title"><a href="https://www.tm.com.my/Pages/Home.aspx">TELEKOM MALAYSIA</a></h4>
+              <h4 class="title"><a href="https://www.tm.com.my/Pages/Home.aspx">Telekom Malaysia (TM)</a></h4>
               <p>• Troubleshoot various network issues and collaborate with staff and vendors to resolve
                 problems.</p>
               <p>• Configured and installed routers switches and wireless controllers.</p>
@@ -209,7 +214,7 @@
               <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
                   <h3 class="mb-0">Universiti Teknologi MARA (UiTM) Jasin</h3>
-                  <div class="subheading mb-3">Bachelor of Computer Science</div>
+                  <div class="subheading mb-3">BACHELOR OF COMPUTER SCIENCE (HONS.) NETCENTRIC COMPUTING</div>
                   <!-- <p>GPA: 3.23</p> -->
                 </div>
                 <div class="flex-shrink-0"><span class="text-primary">April 2014 - July 2016</span></div>
@@ -217,7 +222,7 @@
               <div class="d-flex flex-column flex-md-row justify-content-between">
                 <div class="flex-grow-1">
                   <h3 class="mb-0">Universiti Teknologi MARA (UiTM) Dungun</h3>
-                  <div class="subheading mb-3">Diploma of Computer Science</div>
+                  <div class="subheading mb-3">DIPLOMA IN COMPUTER SCIENCE</div>
                   <!-- <p>GPA: 3.56</p> -->
                 </div>
                 <div class="flex-shrink-0"><span class="text-primary">May 2011 - December 2013</span></div>
@@ -234,124 +239,30 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Features</h2>
-          <p>Check The Features</p>
+          <h2>Skills</h2>
+          <p>Technology Skills</p>
         </div>
 
         <div class="row" data-aos="fade-left">
           <div class="col-lg-3 col-md-4">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a href="">Lorem Ipsum</a></h3>
+              <h3><a href="">Java</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-              <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-              <h3><a href="">Dolor Sitema</a></h3>
+              <h3><a href="">C++</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
-              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-              <h3><a href="">Sed perspiciatis</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3><a href="">Magni Dolores</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
-              <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="">Nemo Enim</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-              <h3><a href="">Eiusmod Tempor</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
-              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-              <h3><a href="">Midela Teren</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
-              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3><a href="">Pira Neve</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="450">
-              <i class="ri-anchor-line" style="color: #b2904f;"></i>
-              <h3><a href="">Dirada Pack</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="500">
-              <i class="ri-disc-line" style="color: #b20969;"></i>
-              <h3><a href="">Moton Ideal</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="550">
-              <i class="ri-base-station-line" style="color: #ff5828;"></i>
-              <h3><a href="">Verdo Park</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="600">
-              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-              <h3><a href="">Flavor Nivelanda</a></h3>
+              <h3><a href="">PHP</a></h3>
             </div>
           </div>
         </div>
 
       </div>
     </section><!-- End Features Section -->
-
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container">
-
-        <div class="row" data-aos="fade-up">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Counts Section -->
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
@@ -532,6 +443,24 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+
+    function calculateExp() {
+      // Assumes Date From (df) and Date To (dt) are valid etc...
+      var df = new Date("03/01/2017");
+      var dt = new Date();
+      var allMonths = dt.getMonth() - df.getMonth() + (12 * (dt.getFullYear() - df.getFullYear()));
+      var allYears = dt.getFullYear() - df.getFullYear();
+      var partialMonths = dt.getMonth() - df.getMonth();
+      if (partialMonths < 0) {
+        allYears--;
+        partialMonths = partialMonths + 12;
+      }
+      document.getElementById("exp").innerHTML = document.getElementById("exp").innerHTML + '(' + allYears + ' Years ' + partialMonths + ' Months)';
+
+    }
+
+  </script>
 
 </body>
 
