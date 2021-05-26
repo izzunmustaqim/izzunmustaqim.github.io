@@ -423,6 +423,23 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
 }
 
+#hero .social-links {
+  margin-top: 30px;
+}
+
+#hero .social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+#hero .social-links a:hover {
+  color: #fff;
+}
+
 #hero .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
