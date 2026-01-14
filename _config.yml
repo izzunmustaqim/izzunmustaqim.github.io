@@ -58,15 +58,15 @@ author:
   # Social media
   artstation       : # Username
   bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
+  facebook         : "izzunmustaqim"
   flickr           : # Username
   foursquare       : # Username
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : # Username
+  instagram        : "izzunmustaqim"
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "izzunmustaqim"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -74,12 +74,12 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : # Username for X / Twitter
+  twitter          : "izzunmustaqim"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
   xing             : # Username
-  youtube          : # Username
+  youtube          : "izzunmustaqim"
   zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings

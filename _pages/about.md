@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Izzun's personal websites"
+title: "Experienced Software Engineer with a demonstrated history of working in the computer software industry. Skilled in PHP, Yii 2.0, Laravel, C++, Android, and Java. Strong engineering professional with a Bachelor of Computer Science focused in Netcentric Computing from Universiti Teknologi MARA."
 author_profile: true
 redirect_from: 
   - /about/
